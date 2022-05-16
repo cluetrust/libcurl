@@ -1,8 +1,8 @@
 // swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
- 
+
 import PackageDescription
- 
+
 let package = Package(
     name: "libcurl",
     products: [
@@ -13,8 +13,7 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(name: "libcurl", 
-                      url: "https://www.cluetrust.com/Downloads/spm/libcurl-xcframework-7.83.0.zip",
-                      checksum: "a51639bf070aaa5011b249b5cb2a3228287bf64f247509827acc9f50c8a1427d")
+        .binaryTarget(name: "libcurl", path: "https://www.cluetrust.com/spm/libcurl-xcframework-7.83.1.zip",
+                       checksum: "f30958bbc8fcf226d367b77941bc9ba04405d009c37fe4630740eed8948ce96a")
     ]
 )
