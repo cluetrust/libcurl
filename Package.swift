@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "libcurl",
+    platforms: [
+        .macOS(.v10_15), .iOS(.v11)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -13,7 +16,7 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(name: "libcurl", url: "https://www.cluetrust.com/Downloads/spm/libcurl-xcframework-7.85.0.zip",
-                       checksum: "d9d38d2aff6ea00607506797516ffb0d74b2ab2e638ca082b20721e92fc288f8")
+        .binaryTarget(name: "libcurl", url: "https://www.cluetrust.com/Downloads/spm/libcurl-xcframework-8.4.0.zip",
+                       checksum: "1654db6979821e92d85d12236459670b1e1ebe6ddf5f094342d8481016eb1248")
     ]
 )
