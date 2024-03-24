@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(name: "libcurl", url: "https://www.cluetrust.com/Downloads/spm/libcurl-xcframework-8.4.0.zip",
-                       checksum: "1654db6979821e92d85d12236459670b1e1ebe6ddf5f094342d8481016eb1248")
+        .binaryTarget(name: "libcurl", url: "https://www.cluetrust.com/Downloads/spm/libcurl-xcframework-8.6.0.zip",
+                       checksum: "68098885729c547d50867f019ca89efc291a0a19685546df1a7d2a891f0ed059")
     ]
 )
